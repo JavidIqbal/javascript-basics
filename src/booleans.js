@@ -24,7 +24,7 @@ export const either = (a, b) => {
     if (a || b) {
         return true;
     } else {
-        return (false);
+        return false;
     }
 };
 
@@ -34,39 +34,67 @@ export const none = (a, b) => {
     if (!a && !b) {
         return true;
     } else {
-        return (false);
+        return false;
     }
 };
 
 
 export const one = (a, b) => {
-    if (a || b || a && b) {
-        return true;
+    if (a === 1 || b === 1) {
+        return false;
     } else {
-        return (false);
+        return true;
     }
 };
 
 
 
+
+
 export const truthiness = (a) => {
-    // your code here
+    return true.toBeTruthy(!!a);
 };
 
+
+
+
+
+
 export const isEqual = (a, b) => {
-    // your code here
+
+    if (a === b) {
+        return true;
+    } else {
+        return false;
+    }
+
+
+
+
+
 };
 
 export const isGreaterThan = (a, b) => {
-    // your code here
+    if (a > b) {
+        return true;
+    } else {
+        return false;
+    }
+
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-    // your code here
+    if (a <= b) {
+        return true;
+    } else {
+        return false;
+    }
+
 };
 
 export const isOdd = (a) => {
-    // your code here
+    return Boolean(a);
+
 };
 
 export const isEven = (a) => {

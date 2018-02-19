@@ -1,11 +1,6 @@
 export const sayHello = (string) => {
-    if (string == "Hello, MCR Codes!") {
-        return true;
-    } else {
-        return false;
-    }
+    return "Hello, " + (string) + "!";
 };
-
 
 
 export const uppercase = (string) => {
