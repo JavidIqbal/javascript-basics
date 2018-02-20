@@ -4,15 +4,15 @@ export const sayHello = (string) => {
 
 
 export const uppercase = (string) => {
-    // your code here
+    return (string.toUpperCase());
 };
 
 export const lowercase = (string) => {
-    // your code here
+    return (string.toLowerCase());
 };
 
 export const countCharacters = (string) => {
-    // your code here
+    return (length(string));
 };
 
 export const firstCharacter = (string) => {
