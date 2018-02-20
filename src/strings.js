@@ -12,13 +12,13 @@ export const lowercase = (string) => {
 };
 
 export const countCharacters = (string) => {
-    return (length(string));
+    return (string).length;
 };
 
 export const firstCharacter = (string) => {
-    // your code here
+    return (string).charAt(0);
 };
 
 export const firstCharacters = (string, n) => {
-    // your code here
+    return (string).substring(0, n);
 };
