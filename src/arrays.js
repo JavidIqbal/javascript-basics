@@ -7,8 +7,6 @@ export const getNthElement = (index, array) => {
 
 export const arrayToCSVString = (array) => {
 
-    return array = new Array();
-
     array = str.split(",");
 
 };

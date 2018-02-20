@@ -9,7 +9,6 @@ export const negate = (a) => {
 
 
 
-
 export const both = (a, b) => {
     if (a && b) {
         return true;
@@ -40,10 +39,10 @@ export const none = (a, b) => {
 
 
 export const one = (a, b) => {
-    if (a === 1 || b === 1) {
-        return false;
-    } else {
+    if ((a || b) && (!(a && b))) {
         return true;
+    } else {
+        return false;
     }
 };
 
