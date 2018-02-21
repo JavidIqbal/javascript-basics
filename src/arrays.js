@@ -2,22 +2,35 @@ export const getNthElement = (index, array) => {
 
     return array[index];
 
+
 };
 
 
 export const arrayToCSVString = (array) => {
 
-    array = str.split(",");
+    return array.join(",");
 
 };
+
+
 
 export const csvStringToArray = (string) => {
-    // your code here
+
+    return string.split(",")
 };
 
+
+
+
 export const addToArray = (array, element) => {
-    // your code here
+
+    array.push(element);
+
+    return addToArray;
 };
+
+
+
 
 export const addToArray2 = (array, element) => {
     // your code here
