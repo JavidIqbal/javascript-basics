@@ -8,7 +8,7 @@ export const getNthElement = (index, array) => {
 
 export const arrayToCSVString = (array) => {
 
-    return array.join(",");
+    { return array.join(","); }
 
 };
 
@@ -16,28 +16,50 @@ export const arrayToCSVString = (array) => {
 
 export const csvStringToArray = (string) => {
 
-    return string.split(",")
+    { return string.split(",") }
 };
 
 
 
 
-export const addToArray = (array, element) => {
+//export const addToArray = (array, element) => { - JI comment
 
+//array.push(element);  - JI comment
+
+//return array;  - JI comment
+
+//};  - JI comment
+
+export const addToArray = (element, array) => {
     array.push(element);
-
-    return addToArray;
 };
 
 
 
 
-export const addToArray2 = (array, element) => {
-    // your code here
+export const addToArray2 = (element, array, array2) => {
+
+    array2 = array.concat(element);
+
+    return array2;
+
 };
+
+//array = ['one', 'two', 'three'];
+//array2 = array.concat(element);
+//return (ar2);
+
+
+
+
+
 
 export const removeNthElement = (index, array) => {
     // your code here
+
+
+
+
 };
 
 export const numbersToStrings = (numbers) => {
